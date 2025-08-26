@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+p {
+    font-size: 24px;
+}
+
+li {
+    font-family: '궁서';
+}
+
+h3 {
+    color: fuchsia;
+}
