@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <style>
+        [type] {
+            font-size: 24px;
+        }
+
+        [type=submit] {
+            color: aquamarine;
+        }
+
+        [type=reset] {
+            color: rgb(39, 70, 155);
+        }
+
+        button[type=submit] {
+            color: darkmagenta;
+        }
+
+        input[type=checkbox]:checked {
+            accent-color: rgb(12, 212, 79);
+        }
+
+        [checked] {
+            accent-color: red;
+        }
+
+        a[href^="http"] {
+            color: rgb(29, 14, 122);
+        }
+
+        a[href*="google"] {
+            color: rgb(210, 230, 36);
+        }
+
+        a[href$=".html"] {
+            color: rgb(33, 30, 209);
+        }
+
+        [class~="cancel"] {
+            background-color: brown;
+        }
+
+        [class|="btn"] {
+            background-color: gold;
+        }
+    </style>
+
+</head>
+
+<body>
+    text : <input type="text" name="text"><br>
+    number : <input type="number" name="number"><br>
+    input : <input type="button" name="button"><br>
+    submit : <input type="submit" name="submit"><br>
+    reset : <input type="reset" name="reset"><br>
+    submit : <button type="submit">Send button</button><br>
+    paragraph : <p myattr="ezen">dummy tag</p><br>
+
+    <input type="checkbox" name="d1" value="1">
+    <input type="checkbox" name="d1" value="1" checked>
+    <input type="checkbox" name="d1" value="1"><br>
+
+    <a href="http://www.google.com">Google</a><br>
+    <a href="https://www.naver.com">Naver</a><br>
+    <a href="Ex01.html">Ex01</a><br>
+    <a href="Ex02.html">Ex02</a><br>
+    <button class="btn cancel big">button</button><br>
+    <button class="btn_cancel_big">button</button><br>
+    <button class="btn-cancel-big">button</button><br>
+</body>
+
+</html>
