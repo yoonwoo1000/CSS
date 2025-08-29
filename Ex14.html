@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>박스 모델</title>
+        <style>
+            div { background-color: aquamarine;
+                border: 10px dotted orangered;
+                margin: 50px; padding: 30px;
+                display: inline-block; }
+            div.A { width: 500px; height: 500px; }
+            div.B { width: 300px; height: 300px; }
+            span { background-color: deeppink;
+                width: 500px; height: 500px; }
+        </style>
+    </head>
+    <body>
+        <div class="A">Box A</div>
+        <div class="B">Box B</div>
+        <style>
+            span { display: inline-block; }
+        </style>
+        <span>span A</span> <span>span b</span>  <span>span c</span>
+        <!-- div 공간 분할 태그
+            가로폭, 세로폭 크기 지정 가능
+            display 속성이 block : block 속성이 있는 객체는
+            한줄에 하나만 위치할 수 있음  -->
+        <!-- span 공간 분할 태그
+            가로폭, 세로폭 크기를 지정해도 적용되지 않음
+            display 속성이 inline : inline 속성이 있는 객체는
+            크기 조절이 안됨 -->
+        <!-- inline-block 속성
+            가로폭, 세로폭 크기가 적용되고, 한줄에 공간이 충분하면,
+            여러 객체를 위치시킬수 있음 -->
+    </body>
+</html>

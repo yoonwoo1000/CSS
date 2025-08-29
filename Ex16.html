@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>상대 좌표</title>
+        <style>
+            /* 원래 있어야 하는 좌표에서 상대좌표로 이동하기 */
+            div { background-color: yellow;
+                  display: inline-block;
+                  position: relative;
+                  width: 100px; height: 100px;
+                  border: 3px solid hotpink; }
+            #x { background-color: yellow; }
+            #y { background-color: greenyellow; }
+            #z { background-color: orange; }
+            /* div:hover { top: 10px; left: 10px; } */
+            div:hover { bottom: 10px; right: 10px; }
+
+            #x:active { background-color: orange; }
+            #y:active { background-color: lime; }
+            #z:active { background-color: orangered; }
+        </style>
+    </head>
+    <body>
+        <div id="x">x</div> <div id="y">y</div> <div id="z">z</div>
+    </body>
+</html>

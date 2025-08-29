@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>가상 선택자</title>
+        <style>
+            /* 형제 객체들을 선택 */
+            /* 첫번째 자식 요소 : 형제들중 맏이 */
+            li:first-child { color:red; }
+            /* 마지막 자식 요소 : 막내 */
+            li:last-child { color:green; }
+            /* 특정 순번 요소 */
+            li:nth-child(3) { color:darkorange}
+            /* 특정 순번 : 홀수번 */
+            li:nth-child(odd) { background-color: silver;}
+            /* 특정 순번 : 짝수번 */
+            li:nth-child(even) { background-color: skyblue;}
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li>1st</li>
+            <li>2nd
+                <ol>
+                    <li>1st</li>
+                    <li>2nd</li>
+                    <li>3rd</li>
+                    <li>4th</li>
+                </ol>
+            </li>
+            <li>3rd</li>
+            <li>4th</li>
+        </ul>
+        <style>
+            /* 속성 선택자로 selected에 적용하는 CSS는 상태 변화에 대응 못함 */
+            option[selected] { background-color: orange;}
+            /* 가상 선택자 중 selected에 대응하는 상태 이름 : checked */
+            option:checked {color: red;}
+        </style>
+        <hr>
+        <select name="lang">
+            <option value="jv">JAVA</option>
+            <option value="js">JS</option>
+            <option value="ht" selected>HTML</option>
+            <option value="cs">CSS</option>
+            <option value="py">python</option>
+            <option value="sq">SQL</option>
+        </select>
+        <style>
+            input[type=checkbox]:checked {
+                width: 30px;
+                height: 30px;
+                accent-color: lime;
+                cursor: crosshair;
+            }
+        </style>
+        <hr>
+        <input type="checkbox" name="typeA" value="1">
+        <input type="checkbox" name="typeA" value="2">
+        <input type="checkbox" name="typeA" value="3" checked>
+        <input type="checkbox" name="typeA" value="4">
+        <input type="checkbox" name="typeA" value="5">
+        <style>
+            input[type=radio]:checked {
+                width: 20px;
+                height: 20px;
+                accent-color: orange;
+                cursor: pointer;
+            }
+        </style>
+        <hr>
+        <input type="radio" name="typeA" value="1">
+        <input type="radio" name="typeA" value="2">
+        <input type="radio" name="typeA" value="3" checked>
+        <input type="radio" name="typeA" value="4">
+        <input type="radio" name="typeA" value="5">
+    </body>
+</html>
